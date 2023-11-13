@@ -77,7 +77,7 @@
       position: absolute;
       bottom: -3rem;
       margin: auto;
-      // background-image: url("../splash.png");
+      background-image: url("../splash.png");
       background-repeat: no-repeat;
       background-size: 23rem;
       left: 33%;
@@ -86,7 +86,7 @@
         @media (max-width: $sm) {
           width: 23rem;
         }
-        // bottom: -5rem;
+        bottom: -5rem;
         // max-height: 380px;
         // max-width: 434px;
       }
