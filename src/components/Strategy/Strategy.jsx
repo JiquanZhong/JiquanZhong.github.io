@@ -1,6 +1,6 @@
 import React from "react";
-import { comments, sliderSettings } from "../../utils/data";
-import css from "./People.module.scss";
+import { sliderSettings, strategies } from "../../utils/data";
+import css from "./Strategy.module.scss";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import {
@@ -9,7 +9,7 @@ import {
   textVariant,
   textVariant2,
 } from "../../utils/motion";
-const People = () => {
+const Strategy = () => {
   return (
     <motion.section
       variants={staggerChildren}
@@ -26,29 +26,29 @@ const People = () => {
         className={`yPaddings innerWidth ${css.container}`}
       >
         <div className={`flexCenter ${css.heading}`}>
-          <span className="primaryText">People talk about us</span>
-          <p style={{ marginTop: "2rem" }}>
-            I got a job that was in accordance with the salary and field of work
-          </p>
-          <p>The process of submitting an appilication was quite cosy</p>
+          <span className="primaryText">CRM Strategies</span>
+          <p style={{ marginTop: "2rem" }}>Explore innovative CRM methods for enhanced engagement.</p>
+          <p>Learn from practical examples to boost customer loyalty.</p>
         </div>
 
-        <div className={`yPaddings ${css.comments}`}>
+        <div className={` ${css.comments}`}>
           {/* to use slider , we have to inlcude css in index.html head */}
           <Slider {...sliderSettings} className={css.slider}>
-            {comments.map((comment, i) => {
-              return (
-                <div className={`flexCenter ${css.comment}`} key={i}>
-                  <img src={comment.img} alt="" />
-                  <p>{comment.comment}</p>
+            {
+              strategies.map((trategy) => {
+                return (
+                  <div className={`flexCenter ${css.comment}`} key={trategy.id}>
+                  {/* <img src={comment.img} alt="" /> */}
+                  <p>{trategy.content}</p>
                   <div className={css.line}></div>
                   <div className={css.bio}>
-                    <span>{comment.name}</span>
-                    <span>{comment.post}</span>
+                    <span>{trategy.title}</span>
+                    {/* <span>{comment.post}</span> */}
                   </div>
                 </div>
-              );
-            })}
+                );
+              })
+            }
           </Slider>
         </div>
       </motion.div>
@@ -56,4 +56,4 @@ const People = () => {
   );
 };
 
-export default People;
+export default Strategy;

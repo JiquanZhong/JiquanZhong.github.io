@@ -33,7 +33,7 @@ export default function Header() {
             className={` flexCenter ${css.menu}`}
           >
             <li>
-              <a href="#service">Service</a>
+              <a href="#service">Motivation</a>
             </li>
             <li>
               <a href="#experience">Experience</a>
@@ -42,7 +42,7 @@ export default function Header() {
               <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#testimonials">Testimonials</a>
+              <a href="#testimonials">CRM Strategies</a>
             </li>
           </ul>
           <div

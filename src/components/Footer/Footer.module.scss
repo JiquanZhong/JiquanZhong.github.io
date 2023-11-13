@@ -27,19 +27,21 @@
     .right {
       flex: 1;
       .info {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
+        margin: 1rem;
         > * {
           display: block;
+          margin: 0.5rem;
         }
       }
       .menu {
         @media (max-width: $sm) {
-          flex-direction: row;
+          flex-direction: column;
           flex-wrap: wrap;
         }
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         list-style: none;
         li {
           cursor: pointer;

@@ -1,9 +1,9 @@
 import React from "react";
-import Experties from "../Experties/Experties";
-import Hero from "../Hero/Hero";
-import Work from "../Work/Work";
+import Motivation from "../Motivation/Motivation";
+import Profile from "../Profile/Profile";
+import Experience from "../Experience/Experience";
 import Portfolio from "../Portfolio/Portfolio";
-import People from "../People/People";
+import Strategy from "../Strategy/Strategy";
 import useScrollToTop from "../../hooks/useScrollToTop";
 
 const Content = () => {
@@ -11,11 +11,11 @@ const Content = () => {
 
   return (
     <div>
-      <Hero />
-      <Experties />
-      <Work />
+      <Profile />
+      <Motivation />
+      <Experience />
       <Portfolio />
-      <People />
+      <Strategy />
     </div>
   );
 };

@@ -1,21 +1,21 @@
 import React from "react";
-import css from "./Experties.module.scss";
+import css from "./Motivation.module.scss";
 import { projectExperience, WhatDoIHelp } from "../../utils/data";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion.js";
 
-const Experties = () => {
+const Motivation = () => {
   return (
     <section className={css.wrapper}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.15 }}
         className={`yPaddings flexCenter innerWidth paddings paddings ${css.container}`}
       >
         <a id="service" className="anchor"></a>
-        <div className={css.leftSide}>
+        {/* <div className={css.leftSide}>
           {projectExperience.map((exp, i) => {
             return (
               <motion.div
@@ -34,27 +34,31 @@ const Experties = () => {
               </motion.div>
             );
           })}
-        </div>
+        </div> */}
 
         <motion.div variants={textVariant(0.5)} className={css.rightSide}>
-          <span className="primaryText">What do I help? </span>
+          <span className="primaryText">Why did I create this site ?</span>
           {WhatDoIHelp.map((paragraph, i) => {
             return (
-              <span className="secondaryText" key={i}>
+              <motion.span
+                variants={fadeIn("right", "tween", (i + 1) * 0.2, 1)}
+                className="secondaryText"
+                key={i}
+              >
                 {paragraph}
-              </span>
+              </motion.span>
             );
           })}
 
           <div className={` flexCenter ${css.stats}`}>
             <div className={` flexCenter ${css.stat}`}>
-              <span className="primaryText">285+</span>
-              <span className="secondaryText">Projects Completed</span>
+              <span className="primaryText">1000+</span>
+              <span className="secondaryText">Templates Completed</span>
             </div>
 
             <div className={` flexCenter ${css.stat}`}>
-              <span className="primaryText">190+</span>
-              <span className="secondaryText">Happy Clients</span>
+              <span className="primaryText">40+</span>
+              <span className="secondaryText">Automated Workflows</span>
             </div>
           </div>
         </motion.div>
@@ -63,4 +67,4 @@ const Experties = () => {
   );
 };
 
-export default Experties;
+export default Motivation;

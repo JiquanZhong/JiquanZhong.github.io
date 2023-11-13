@@ -1,16 +1,16 @@
 import React from "react";
-import css from "./Hero.module.scss";
+import css from "./Profile.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 
-const Hero = () => {
+const Profile = () => {
   return (
     <section className={`${css.wrapper} paddings`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.15 }}
         className={`innerWidth ${css.container}`}
       >
         <div className={css.middleElements}>
@@ -18,18 +18,18 @@ const Hero = () => {
             variants={fadeIn("right", "tween", 0.2, 1)}
             className="primaryText"
           >
-            Hey There,
+            Bonjour,
             <br />
-            I'm Yuan TANG
+            it’s Yuan TANG
           </motion.span>
 
           <motion.span
             className="secondaryText"
             variants={fadeIn("left", "tween", 0.4, 1)}
           >
-            I design beautiful Email
+            An enthusiastic CRM specialist from
             <br />
-            things, And I love what I do
+            Panda's hometown Chengdu, China. 🐼
           </motion.span>
         </div>
 
@@ -48,4 +48,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Profile;
