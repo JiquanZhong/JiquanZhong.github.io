@@ -1,6 +1,6 @@
 import React from "react";
 import { workExp } from "../../utils/data";
-import css from "./Work.module.scss";
+import css from "./Experience.module.scss";
 import { motion } from "framer-motion";
 import {
   draw,
@@ -10,13 +10,13 @@ import {
   textVariant2,
   zoomIn,
 } from "../../utils/motion";
-const Work = () => {
+const Experience = () => {
   return (
     <motion.section
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.1 }}
       className={`paddings ${css.wrapper}`}
     >
       <a className="anchor" id="experience"></a>
@@ -34,8 +34,9 @@ const Work = () => {
                 className={`flexCenter ${css.exp}`}
               >
                 <div className={css.post}>
-                  <h1>{exp.place}</h1>
+                  <h1>{exp.company}</h1>
                   <p>{exp.tenure}</p>
+                  <p>{exp.place}</p>
                 </div>
                 <div className={css.role}>
                   <h1>{exp.role}</h1>
@@ -68,6 +69,12 @@ const Work = () => {
                 style={{ background: "#EEC048" }}
               ></div>
             </div>
+             <div>
+              <div
+                className={css.circle}
+                style={{ background: "#F2704E" }}
+              ></div>
+            </div>
           </motion.div>
         </div>
       </div>
@@ -75,4 +82,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Experience;
