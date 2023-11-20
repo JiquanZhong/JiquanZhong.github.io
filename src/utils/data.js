@@ -50,7 +50,7 @@ export const workExp = [
     company: "Chanel (C/H)",
     tenure: "Dec.2020 - April.20",
     place: "Shanggai, China",
-    role: "CRM and Boutiques Assistant",
+    role: "CRM Ominichanel Assistant",
     detail:
       "Oversaw omnichannel communication (SMS, MMS, Push, WeChat), analyzed online sales (Tmall, WeChat, Website), and managed sample and gift distribution to over 380 boutiques, aligned with campaign data. Collaborated with logistics for timely deliveries, shared monthly campaign updates with retail teams, addressed customer inquiries on samples and gifts, and monitored competitor trends and technologies.",
   },
@@ -76,7 +76,7 @@ export const strategies = [
     title: "Data-Driven Strategy",
     content:
       "Analyzing customer data to inform decision-making. Example: Identifying trends from customer behavior to tailor marketing campaigns.",
-  },
+  },  
   {
     id: "3",
     title: "Automation",
