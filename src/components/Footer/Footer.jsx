@@ -27,11 +27,8 @@ const Footer = () => {
 
         <div className={css.right}>
           <div className={css.info}>
-            <span className="secondaryText">Information</span>
-            <p>Vitry-Sur-Seine, Île-de-France, France</p>
             <span className="secondaryText">Contact Me</span>
             <p>riritang1922@gmail.com</p>
-            <p>(+33) 06 31 47 68 29</p>
           </div>
         </div>
       </motion.div>

@@ -27,28 +27,22 @@ const Strategy = () => {
       >
         <div className={`flexCenter ${css.heading}`}>
           <span className="primaryText">CRM Strategies</span>
-          <p style={{ marginTop: "2rem" }}>Explore innovative CRM methods for enhanced engagement.</p>
+          <p style={{ marginTop: "2rem" }}>
+            Explore innovative CRM methods for enhanced engagement.
+          </p>
           <p>Learn from practical examples to boost customer loyalty.</p>
         </div>
 
         <div className={` ${css.comments}`}>
           {/* to use slider , we have to inlcude css in index.html head */}
           <Slider {...sliderSettings} className={css.slider}>
-            {
-              strategies.map((trategy) => {
-                return (
-                  <div className={`flexCenter ${css.comment}`} key={trategy.id}>
-                  {/* <img src={comment.img} alt="" /> */}
-                  <p>{trategy.content}</p>
-                  <div className={css.line}></div>
-                  <div className={css.bio}>
-                    <span>{trategy.title}</span>
-                    {/* <span>{comment.post}</span> */}
-                  </div>
+            {strategies.map((trategy) => {
+              return (
+                <div className={`flexCenter ${css.comment}`} key={trategy.id}>
+                  <img src={trategy.src}></img>
                 </div>
-                );
-              })
-            }
+              );
+            })}
           </Slider>
         </div>
       </motion.div>

@@ -26,7 +26,7 @@ export default function Header() {
         <div className={`flexCenter innerWidth ${css.container}`}>
           <Link to="/">
             <div className={css.name}>
-              <img src="./house-icon.svg" alt="Home" style={{"margin-right":"1rem"}}/>
+              <img src="./house-icon.svg" alt="Home" style={{marginRight:"1rem"}}/>
               Yuan TANG
             </div>
           </Link>
@@ -70,7 +70,7 @@ export default function Header() {
         <div className={`flexCenter innerWidth ${css.container}`}>
           <Link to="/">
             <div className={css.name}>
-            <img src="./house-icon.svg" alt="Home" style={{"margin-right":"1rem"}}/>
+            <img src="./house-icon.svg" alt="Home" style={{marginRight:"1rem"}}/>
               Yuan TANG</div>
           </Link>
         </div>

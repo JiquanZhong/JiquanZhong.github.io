@@ -67,70 +67,28 @@ export const workExp = [
 export const strategies = [
   {
     id: "1",
-    title: "Personalization",
-    content:
-      "Customizing interactions based on customer data to create unique experiences. Example: Using purchase history to recommend products.",
+    title: "Cumstomer Acquisition",
+    src: "./strategies/1.png",
   },
   {
     id: "2",
-    title: "Data-Driven Strategy",
-    content:
-      "Analyzing customer data to inform decision-making. Example: Identifying trends from customer behavior to tailor marketing campaigns.",
-  },  
-  {
+    title: "Cumstomer Conversion",
+    src: "./strategies/2.png",
+  },  {
     id: "3",
-    title: "Automation",
-    content:
-      "Implementing CRM tools for automatic responses and task management. Example: Using chatbots for instant customer queries resolution.",
-  },
-  {
+    title: "Cumstomer Loyalty",
+    src: "./strategies/3.png",
+  },  {
     id: "4",
-    title: "Feedback Utilization",
-    content:
-      "Actively using customer feedback to refine products and services. Example: Incorporating customer suggestions into product development.",
-  },
-  {
-    id: "5",
-    title: "Omnichannel Engagement",
-    content:
-      "Integrating multiple channels for a seamless customer experience. Example: Synchronizing service across online, phone, and in-store interactions.",
-  },
-  {
-    id: "6",
-    title: "Segmentation",
-    content:
-      "Categorize customers into distinct groups for targeted communication. Example: Sending customized offers to different age groups.",
-  },
-  {
-    id: "7",
-    title: "Customer Journey Mapping",
-    content:
-      "Analyze interactions at each touchpoint to improve overall experience. Example: Streamlining the checkout process based on user feedback.",
-  },
-  {
-    id: "8",
-    title: "Loyalty Programs",
-    content:
-      "Encourage repeat purchases with rewards. Example: A points system for discounts on future purchases.",
-  },
-  {
-    id: "9",
-    title: "Social Media Engagement",
-    content:
-      "Engage customers directly on social platforms. Example: Resolving service issues and promoting deals on Twitter.",
-  },
-  {
-    id: "10",
-    title: "Predictive Analytics",
-    content:
-      "Use data to anticipate future customer needs. Example: Suggesting products based on previous browsing and purchase history.",
+    title: "Performance Analysis",
+    src: "./strategies/4.png",
   },
 ];
 
 export const works = [
   {
     id: "1",
-    workTitle: "Christmas Gift Guide",
+    workTitle: "Gift Guide Campaign",
     pictureURL: "./works/picture/showCase1.png",
     htmlURL: "./works/html/work1.html",
   },
@@ -142,15 +100,39 @@ export const works = [
   },
   {
     id: "3",
-    workTitle: "Referrel Program",
+    workTitle: "Referral Program Campaign",
     pictureURL: "./works/picture/showCase3.png",
     htmlURL: "./works/html/work3.html",
   },
   {
     id: "4",
-    workTitle: "Products Collection",
+    workTitle: "Beauty Collection Campaign",
     pictureURL: "./works/picture/showCase4.png",
     htmlURL: "./works/html/work4.html",
+  },
+  {
+    id: "5",
+    workTitle: "Black Friday",
+    pictureURL: "./works/picture/showCase5.png",
+    htmlURL: "./works/html/work5.html",
+  },
+  {
+    id: "6",
+    workTitle: "Black Friday VIP REM Campaign",
+    pictureURL: "./works/picture/showCase6.png",
+    htmlURL: "./works/html/work6.html",
+  },
+  {
+    id: "7",
+    workTitle: "Product Campaign",
+    pictureURL: "./works/picture/showCase7.png",
+    htmlURL: "./works/html/work7.html",
+  },
+  {
+    id: "8",
+    workTitle: "Seasonal Campaign",
+    pictureURL: "./works/picture/showCase8.png",
+    htmlURL: "./works/html/work8.html",
   },
 ];
 
